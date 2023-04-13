@@ -1,13 +1,6 @@
 .box{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100px;
     height: 100px;
-    background-color: aqua;
-    text-align: center;
-}
-
-body{
-    text-align: center;
+    width: 100px;
+    background-color: green;
+    position: absolute;
 }
