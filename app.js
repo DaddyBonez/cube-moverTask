@@ -3,7 +3,7 @@ var screenwidth = window.innerWidth;
 var screenheight = window.innerHeight;
 
 document.addEventListener('keydown', function(event) {
-    if (event.key === 37) { 
+    if (event.KeyboardEvent === 37) { 
         var newLeft = parseInt(box.style.left) - 10;
         if (newLeft >= 0) {
           box.style.left = newLeft + 'px';
@@ -14,14 +14,16 @@ document.addEventListener('keydown', function(event) {
           box.style.top = newTop + 'px';
         }
     } else if (event.key === 39) { 
-        var newLeft = parseInt(box.style.left) - 10;
-        if (newLeft >= 0) {
+        var newLeft = parseInt(box.style.left) + 10;
+        if (newLeft + box.offsetWidth <= screenwidth) {
           box.style.left = newLeft + 'px';
         }
     } else if (event.key === 40) { 
-        var newTop = parseInt(box.style.top) - 10;
-        if (newTop >= 0) {
+        var newTop = parseInt(box.style.top) + 10;
+        if (newTop + box.offsetHeight <= screenheight) {
           box.style.top = newTop + 'px';
         }
     }
+
+    console.log(event.key);
 });
