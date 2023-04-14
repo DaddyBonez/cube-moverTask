@@ -1,10 +1,13 @@
 let box = document.querySelector('.box');
+let fiende = document.querySelector('.fiende')
 let moveby = "10px";
+
 
 window.addEventListener('load', () => {
     box.style.left = "200px";
     box.style.top = "200px";
 });
+
 
 window.addEventListener('keydown', (e) =>{
 
