@@ -9,9 +9,9 @@ window.addEventListener('load', () => {
 });
 
 
-window.addEventListener('keydown', (e) =>{
 
-    console.log(box.style.left = parseInt(box.style.left) - moveBy + 'px')
+window.addEventListener('keydown', (e) =>{
+    console.log(box.style.top = parseInt(box.style.top) - moveBy + 'px')
     switch(e.key){
         case 'ArrowLeft' :
             box.style.left = parseInt(box.style.left) - moveBy + 'px'
